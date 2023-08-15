@@ -27,3 +27,25 @@ const isDivisible = (checkNumber) =>{
 
 const product = isDivisible(2);
 console.log(product);
+
+
+const prompt = "Hi I am Akshat"
+
+const checkStringForLength = (inputWord) => {
+    let stringLength = inputWord.split(' '); 
+    return stringLength;
+}
+
+
+
+const theSentence = checkStringForLength(prompt)
+console.log(theSentence)
+
+const checkStringForSize = (stringLength) =>{
+    for(let i = 0; i < stringLength.length; i++){
+     console.log(i) ;
+    }
+}
+
+const theSentence2 = checkStringForSize(prompt)
+console.log(theSentence2)
