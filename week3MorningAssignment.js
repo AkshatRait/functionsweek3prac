@@ -52,7 +52,7 @@ console.log(numberForCheck);
 
 
 
-let cupsConsumed = 10;
+let cupsConsumed = 56;
 //!SECTION 6th
 const amountOfCaffine = 95;
 
@@ -63,7 +63,6 @@ const caffineCalculator = (cups) =>{
 }
  
 const howMuchCaffine = caffineCalculator(cupsConsumed);
-console.log(`You intook` , howMuchCaffine , `grams of caffine today.`)
-
+console.log(howMuchCaffine)
 
 
