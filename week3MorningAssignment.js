@@ -48,3 +48,22 @@ const checkForEven = (number) =>{
 }
 const numberForCheck = checkForEven(3);
 console.log(numberForCheck);
+
+
+
+
+let cupsConsumed = 10;
+//!SECTION 6th
+const amountOfCaffine = 95;
+
+const caffineCalculator = (cups) =>{
+    let calculateCaffine = cups * amountOfCaffine;
+    return calculateCaffine;
+   
+}
+ 
+const howMuchCaffine = caffineCalculator(cupsConsumed);
+console.log(`You intook` , howMuchCaffine , `grams of caffine today.`)
+
+
+
