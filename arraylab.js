@@ -61,21 +61,45 @@ avgTemp(fahrenheitTemps);
 const fruits = ["Apple", "Banana", "Orange", "Grapes", "Mango"];
 
 const favoriteFruit = (array ,favoritePick) =>{
-    const dontForgetToAdd = true; 
+    const shouldAdd = true; 
    array.forEach((fruit)=>{
         if(fruit === favoritePick){
             console.log(fruit)
         }
     })
-    // if(dontForgetToAdd){
-    //     array.push(dontForgetToAdd)
-    // }
-}
+    if(shouldAdd){
+        array.push(favoritePick)
+    }}
 
-const addMissingFruit = (array ,dontForgetToAdd)=>{
-     fruits = array.push(dontForgetToAdd)
-}
-
-favoriteFruit(fruits , "peach")
-addMissingFruit(fruits ,"peach")
+favoriteFruit(fruits , "Peach")
 console.log(fruits);
+
+//!SECTION 4th
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October"];
+
+const shortenMonth = (array) =>{
+    const newListOfArrays = array.map((month)=>{
+        return month.substring(0 ,3) 
+    })
+    return newListOfArrays
+}
+const shortenedMonths = shortenMonth(months)
+console.log(shortenedMonths);
+
+
+//!SECTION 5th
+
+const mixedData = [42, 'hello', true, 3.14, 'world', false, null, undefined, 'goodbye', 7];
+
+const onlyStrings = (array) =>{
+    const stringsOnly = [];
+    for(let i = 0; i < array.length; i++){
+       if(typeof array[i] === 'string'){
+        stringsOnly.push(array[i])
+    }
+}
+return stringsOnly;
+}
+
+const stringsOnly = onlyStrings(mixedData);
+console.log(stringsOnly)
