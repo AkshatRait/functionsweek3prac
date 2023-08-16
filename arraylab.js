@@ -51,6 +51,7 @@ const avgTemp = (temperatures) =>{
     console.log(average);
     console.log(maxTemp);
 
+
 }
 
 avgTemp(fahrenheitTemps);
@@ -102,4 +103,20 @@ return stringsOnly;
 }
 
 const stringsOnly = onlyStrings(mixedData);
-console.log(stringsOnly)
+console.log(stringsOnly);
+
+
+
+let websiteList = ["Facebook" , "Amazon" , "Google"];
+
+const website = (array) =>{
+    let existence = false;
+    array.forEach((website)=>{
+        if(website !== "CodeWars"){
+            existence = false;
+            array.push("CodeWars")
+            console.log(array);
+        }
+        
+    })
+}
