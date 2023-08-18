@@ -84,9 +84,9 @@ const squared = (array) =>{
     let  sum = [];
     for( i = 0; i < array.length; i++){
         sum = array[i] * array[i]
-        return sum
+        
     }
-
+    return sum
     }
 
 
@@ -268,3 +268,7 @@ return calculateAverage;
 }
  const classGradeAverage = averageGradeCalculator()
  console.log(classGradeAverage);
+
+
+
+ gsdsdgsdg
