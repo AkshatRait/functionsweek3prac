@@ -229,19 +229,7 @@ cohortFour.instructor.newAssistant = {
 // console.log(cohortFour)
  
  const changeAssistant = () =>{
-    if (
-        cohortFour.instructor.assistant.name !== cohortFour.instructor.newAssistant.name || cohortFour.instructor.assistant.age !== cohortFour.instructor.newAssistant.age || cohortFour.instructor.assistant.email !== cohortFour.instructor.newAssistant.email
-        ) 
-        {
-            cohortFour.instructor.assistant = {
-            ...cohortFour.instructor.newAssistant}
-        return true;
-    }
-    else{
-        return false;
-    }
- }
-//4
+ //4
 let checkFred;
 function checkingFred(){
 for(i = 0; i < cohortFour.instructor.completedCohortIds.length; i++){
@@ -253,21 +241,19 @@ for(i = 0; i < cohortFour.instructor.completedCohortIds.length; i++){
         return `Fred didn't complete cohort 55`
     }
 }
-}
-//5
+}   if (
+        cohortFour.instructor.assistant.name !== cohortFour.instructor.newAssistant.name || cohortFour.instructor.assistant.age !== cohortFour.instructor.newAssistant.age || cohortFour.instructor.assistant.email !== cohortFour.instructor.newAssistant.email
+        ) 
+        {
+            cohortFour.instructor.assistant = {
+            ...cohortFour.instructor.newAssistant}
+        return true;
+    }
+    else{
+        return false;
+    }
+ }
 
-let sum = 0;
-const averageGradeCalculator = () =>{
-
-for(i = 0; i < cohortFour.classGrades.length; i++){
-    sum += cohortFour.classGrades[i]; 
-}
-
-let calculateAverage = sum / cohortFour.classGrades.length;
-return calculateAverage;
-}
- const classGradeAverage = averageGradeCalculator()
- console.log(classGradeAverage);
 
 
 
